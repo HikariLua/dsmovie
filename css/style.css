@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-	--font-color: #FFFFFF;
+	--white: #FFFFFF;
 	--primary-color: #4D41C0;
 	--body-bg: #E8E8E8;
+
+	--card-font-color: #4A4A4A;
 }
 
 * {
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	color: var(--font-color);
+	color: var(--white);
 	background-color: var(--primary-color);
 }
 
@@ -51,6 +53,7 @@ a, a:hover {
 	text-decoration: none;
 }
 
+/* DSMovie Contact */
 .dsmovie-contact-container {
 	display: flex;
 	align-items: center;
@@ -58,4 +61,55 @@ a, a:hover {
 
 .dsmovie-contact-container img {
 	margin-right: 10px;
+}
+
+/* DSMovie Card */
+#dsmovie-card-list {
+	padding: 70px 0;
+}
+
+.dsmovie-card {
+	width: 260px;
+	height: 349px;
+	border-radius: 8px;
+
+	background-color: var(--white);
+}
+
+.dsmovie-card img {
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+
+	margin-bottom: 10px;
+}
+
+.dsmovie-card-description {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0 20px 0;
+	align-items: center;
+}
+
+.dsmovie-card-description h3 {
+	font-size: 14px;
+	font-weight: 700;
+
+	margin-bottom: 25px;
+
+	color: var(--card-font-color);
+}
+
+.review-btn, .review-btn:hover {
+	width: 180px;
+	height: 40px;
+	border-radius: 4px;
+
+	font-size: 14px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--white);
+	background-color: var(--primary-color);
 }
