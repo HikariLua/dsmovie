@@ -80,7 +80,8 @@ a, a:hover {
 
 .dsmovie-card-description {
 	min-height: 200px;
-
+	border-radius: 0 0 8px 8px;
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -99,17 +100,23 @@ a, a:hover {
 	color: var(--card-font-color);
 }
 
-.review-btn, .review-btn:hover {
+.dsmovie-btn, .dsmovie-btn:hover {
 	width: 180px;
 	height: 40px;
 	border-radius: 4px;
 
 	font-size: 14px;
 	font-weight: 700;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	color: var(--white);
 	background-color: var(--primary-color);
+}
+
+#dsmovie-form-section {
+	padding: 70px 0;
+	max-width: 480px;
 }
