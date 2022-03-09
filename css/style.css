@@ -4,8 +4,9 @@
 	--white: #FFFFFF;
 	--primary-color: #4D41C0;
 	--body-bg: #E8E8E8;
-
 	--card-font-color: #4A4A4A;
+	--light-gray: #9E9E9E;
+	--lighter-gray: #AAAAAA;
 }
 
 * {
@@ -53,7 +54,7 @@ a, a:hover {
 	text-decoration: none;
 }
 
-/* DSMovie Contact */
+/* Contact */
 .dsmovie-contact-container {
 	display: flex;
 	align-items: center;
@@ -63,9 +64,9 @@ a, a:hover {
 	margin-right: 10px;
 }
 
-/* DSMovie Card */
+/* Card */
 #dsmovie-card-list {
-	padding: 70px 0;
+	padding: 40px 0;
 }
 
 .dsmovie-card {
@@ -103,11 +104,11 @@ a, a:hover {
 .dsmovie-btn, .dsmovie-btn:hover {
 	width: 180px;
 	height: 40px;
+	border: none;
 	border-radius: 4px;
 
 	font-size: 14px;
 	font-weight: 700;
-	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -116,7 +117,60 @@ a, a:hover {
 	background-color: var(--primary-color);
 }
 
+/* Form */
 #dsmovie-form-section {
-	padding: 70px 0;
+	padding: 40px 0;
+}
+
+.dsmovie-form-container {
 	max-width: 480px;
+}
+
+.dsmovie-form-description {
+	border-radius: 0 0 8px 8px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px 20px 20px;
+
+	background-color: var(--white);
+}
+
+.dsmovie-form-description h3 {
+	font-weight: 700;
+	font-size: 13px;
+
+	margin-bottom: 20px;
+
+	color: var(--card-font-color);
+}
+
+.dsmovie-form {
+	width: 100%;
+
+	font-size: 12px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	color: var(--lighter-gray);
+}
+
+.dsmovie-form-group {
+	width: 100%;
+
+	margin-bottom: 20px;
+}
+
+.dsmovie-form-btn-container {
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
 }
