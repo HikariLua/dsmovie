@@ -2,9 +2,10 @@
 
 :root {
 	--white: #FFFFFF;
-	--primary-color: #4D41C0;
-	--body-bg: #E8E8E8;
-	--dark-gray: #4A4A4A;
+	--dark-purple: #151526;
+	--darker-purple: #0e0e1a;
+	--lighter-purple: #8686ff;
+	--primary-color: #15276e;
 	--gray: #989898;
 	--light-gray: #9E9E9E;
 	--lighter-gray: #AAAAAA;
@@ -18,7 +19,7 @@
 }
 
 html, body {
-	background-color: var(--body-bg);
+	background-color: var(--darker-purple);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,7 +93,7 @@ a, a:hover {
 	
 	margin: 0;
 
-	color: var(--primary-color);
+	color: var(--lighter-purple);
 }
 
 .dsmovie-page-btn {
@@ -105,24 +106,33 @@ a, a:hover {
 	justify-content: center;
 	align-items: center;
 
-	color: var(--primary-color);
-	background-color: var(--white);
+	color: var(--lighter-purple);
+	background-color: unset;
 }
 
-.dsmovie-page-btn:disabled {
-	color: var(--lighter-gray);
+.dsmovie-page-btn:hover {
+	background-color: var(--lighter-purple);
+}
+
+.dsmovie-page-btn:hover img {
+	filter: brightness(0) /* Turn black */
+			saturate(100%)
+			/* Change color */
+			invert(3%) sepia(38%) saturate(2143%) hue-rotate(217deg) brightness(91%) contrast(95%);
+
+}
+
+
+.dsmovie-page-btn:disabled, .dsmovie-page-btn:disabled:hover  {
+	color: var(--dark-purple);
+	background-color: unset
 }
 
 .dsmovie-page-btn:disabled img {
 	filter: brightness(0) /* Turn black */
 			saturate(100%)
-
-			invert(83%) /* Change color */
-			sepia(0%)
-			saturate(145%)
-			hue-rotate(149deg)
-			brightness(84%)
-			contrast(84%);
+			/* Change color */
+			invert(7%) sepia(6%) saturate(5038%) hue-rotate(201deg) brightness(93%) contrast(95%);
 }
 
 /* Card */
@@ -151,7 +161,7 @@ a, a:hover {
 	justify-content: space-between;
 	padding: 10px 20px 20px 20px;
 
-	background-color: var(--white);
+	background-color: var(--dark-purple);
 }
 
 .dsmovie-card-description h3 {
@@ -161,7 +171,7 @@ a, a:hover {
 	margin-bottom: 10px;
 	text-align: center;
 
-	color: var(--dark-gray);
+	color: var(--lighter-purple);
 }
 
 .dsmovie-review-container {
@@ -183,7 +193,7 @@ a, a:hover {
 
 	margin-bottom: 10px;
 
-	color: var(--dark-gray);
+	color: var(--lighter-purple);
 }
 
 .dsmovie-star-container {
@@ -192,7 +202,7 @@ a, a:hover {
 	display: flex;
 }
 
-.dsmovie-btn, .dsmovie-btn:hover {
+.dsmovie-btn {
 	width: 180px;
 	height: 40px;
 	border: none;
@@ -208,9 +218,15 @@ a, a:hover {
 	background-color: var(--primary-color);
 }
 
+.dsmovie-btn:hover {
+
+	color: var(--lighter-purple);
+	background-color: var(--darker-purple)
+}
+
 /* Form */
 #dsmovie-form-section {
-	padding: 40px 0;
+	padding: 40px 10px;
 }
 
 .dsmovie-form-container {
@@ -226,7 +242,7 @@ a, a:hover {
 	justify-content: space-between;
 	padding: 10px 20px 20px 20px;
 
-	background-color: var(--white);
+	background-color: var(--dark-purple);
 }
 
 .dsmovie-form-description h3 {
@@ -235,7 +251,7 @@ a, a:hover {
 
 	margin-bottom: 20px;
 
-	color: var(--dark-gray);
+	color: var(--lighter-purple);
 }
 
 .dsmovie-form {
@@ -253,8 +269,24 @@ a, a:hover {
 
 .dsmovie-form-group {
 	width: 100%;
-
+	
 	margin-bottom: 20px;
+	
+	color: var(--lighter-purple);
+}
+
+.dsmovie-form-group input:enabled {
+	border-color: var(--lighter-purple);
+
+	color: var(--lighter-gray);
+	background-color: var(--darker-purple);
+}
+
+.dsmovie-form-group select:enabled{
+	border-color: var(--lighter-purple);
+
+	color: var(--lighter-gray);
+	background-color: var(--darker-purple);
 }
 
 .dsmovie-form-btn-container {
